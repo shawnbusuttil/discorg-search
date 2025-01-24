@@ -2,15 +2,15 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import { useRouter, useSearchParams } from 'next/navigation';
 
-import Home from '../page';
-import useGetReleasesByArtist from '../../hooks/useGetReleasesByArtist';
+import Home from '../app/page';
+import useGetReleasesByArtist from '../hooks/useGetReleasesByArtist';
 
 jest.mock('next/navigation', () => ({
   useRouter: jest.fn(),
   useSearchParams: jest.fn()
 }));
 
-jest.mock('../../hooks/useGetReleasesByArtist', () => jest.fn());
+jest.mock('../hooks/useGetReleasesByArtist', () => jest.fn());
 
 describe('Home Component', () => {
  const mockReleases = {
