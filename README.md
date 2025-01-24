@@ -35,13 +35,9 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
 
-## Notes
-
-- Mempool (unconfirmed) balance was used because it is faster to test like that.
-- Testing difficulties experienced due to time gating on tBTC faucets and couldn't use VPN.
-
 ## Possible Improvements
 
-- Loader for loading states (UI).
-- Split request and waiting for payment into two steps (UI).
-- Back button to prevent refresh.
+- More specific API error handling.
+- Dark mode UI.
+- Better looking loaders.
+- Usage of react query.
